@@ -13,14 +13,14 @@ public class Task4 {
 		numbers=getMass();
 		evens=getEven(numbers);
 		if(evens.size()==0) {
-	        System.out.println("������ ����� � ������������������ ���");
+	        System.out.println("×åòíûõ ÷èñåë â ïîñëåäîâàòåëüíîñòè íåò");
 		}
 	}
 	
 	public static Integer getK() {
 		int k=0;
 		Scanner sc = new Scanner(System.in); 
-        System.out.println("������� ����������� ����� ");
+        System.out.println("Ââåäèòå íàòóðàëüíîå ÷èñëî ");
 		if (sc.hasNext()) { 
 			k=sc.nextInt();
 			}
@@ -35,7 +35,7 @@ public class Task4 {
 		int lenght=0;
 		int min = 10; 
 	    int max = 10; 
-        System.out.println("������� ����� ������� (������� ����������� ����� ������ 0): ");
+        System.out.println("Çàäàéòå äëèíó ìàññèâà (ââåäèòå íàòóðàëüíîå ÷èñëî áîëüøå 0): ");
         lenght=getK();
 	    for(int i=0;i<lenght;i++) {
 		    int x = min + (int) (Math.random() * max);
@@ -56,3 +56,5 @@ public class Task4 {
 	}
 
 }
+// Яна, к сожалению вы для решения задач стали использовать коллекцию ArrayList, которая скрывает все особенности работы с массивом
+// к сожалению я не смогу зачесть эти решения
